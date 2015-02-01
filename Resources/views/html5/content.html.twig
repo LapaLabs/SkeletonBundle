@@ -1,4 +1,4 @@
-{% extends "BWSkeletonBundle:Frontend:layout.html.twig" %}
+{% extends "BWSkeletonBundle:html5:layout.html.twig" %}
 
 {% block content_wrap -%}
     {% block top -%}
@@ -31,7 +31,7 @@
                 <div id="article">
                     <article>
                         {% block article_wrap -%}
-                            % Content::Content %
+                            % Content::Article %
                         {%- endblock %}
                     </article>
                 </div>
@@ -56,7 +56,7 @@
             <div class="col-lg-12">
                 <div id="bottom">
                     {% block bottom_wrap -%}
-                        % Content::Top %
+                        % Content::Bottom %
                     {%- endblock %}
                 </div>
             </div>

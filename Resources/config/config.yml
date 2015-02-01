@@ -1,7 +1,0 @@
-twig:
-    globals:
-        locale: "%locale%"
-        title_prefix: "%title_prefix%"
-        title_suffix: "%title_suffix%"
-        description_prefix: "%description_prefix%"
-        description_suffix: "%description_suffix%"

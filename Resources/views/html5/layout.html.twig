@@ -1,35 +1,7 @@
-{% extends "BWSkeletonBundle:Frontend:base.html.twig" %}
-
-{% block lang -%}{{ locale }}{%- endblock %}
-
-{% block charset -%}utf-8{%- endblock %}
-
-{% block title -%}
-    {{ title_prefix ? title_prefix ~ ' ' : '' }}
-    {%- block title_wrap -%}
-        % Layout::Title %
-    {%- endblock -%}
-    {{ title_suffix ? ' ' ~ title_suffix : '' }}
-{%- endblock %}
-
-{% block description -%}
-    {{ description_prefix ? description_prefix ~ ' ' : '' }}
-    {%- block description_wrap -%}
-        % Layout::Description %
-    {%- endblock -%}
-    {{ description_suffix ? ' ' ~ description_suffix : '' }}
-{%- endblock %}
-
-{% block css -%}
-    <!-- % Layout::CSS % -->
-{%- endblock %}
-
-{% block js -%}
-    <!-- % Layout::JS % -->
-{%- endblock %}
+{% extends "BWSkeletonBundle:html5:base.html.twig" %}
 
 {% block flash_messages -%}
-    {% if app.session.flashbag.peekAll %}
+    {% if app.session.flashBag.peekAll %}
         <div id="flash-messages">
             <div class="container">
                 <div class="row">

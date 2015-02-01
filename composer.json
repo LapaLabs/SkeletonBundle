@@ -1,7 +1,7 @@
 {
     "name": "bocharsky-bw/skeleton-bundle",
     "description": "The HTML markup skeleton of base templates for Symfony Framework",
-    "keywords": ["bw", "skeleton", "template", "markup", "bundle"],
+    "keywords": ["bw", "skeleton", "template", "base layout", "markup", "bundle"],
     "homepage": "https://github.com/bocharsky-bw/SkeletonBundle",
     "license": "MIT",
     "authors": [

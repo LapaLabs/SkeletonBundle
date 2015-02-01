@@ -7,8 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 /**
- * Class Example
- * @package BW\SkeletonBundle\Controller
+ * Class ExampleController
  * @Route("/example")
  */
 class ExampleController extends Controller

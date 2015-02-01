@@ -1,4 +1,0 @@
-bw_skeleton_controller:
-    resource: "@BWSkeletonBundle/Controller/"
-    type:     annotation
-    prefix:   /skeleton

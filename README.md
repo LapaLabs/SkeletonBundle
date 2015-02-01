@@ -34,35 +34,14 @@ public function registerBundles()
 }
 ```
 
-2) Add few parameters used in the skeleton templates
-*(You should to add this parameters in both `parameters.yml` and `parameters.yml.dist` files in `app/config` folder)*:
-
-``` yaml
-# app/config/parameters.yml
-# app/config/parameters.yml.dist
-parameters:
-    locale: ru
-    title_prefix: ~
-    title_suffix: ~
-    description_prefix: ~
-    description_suffix: ~
-```
-
-3) Import config resource to passed parameters to the skeleton templates as global twig variables:
-
-``` yaml
-# app/config/config.yml
-imports:
-    - { resource: "@BWSkeletonBundle/Resources/config/config.yml" }
-```
-
-4) Register the bundle's routes for `dev` environment *(optional, if you want to see examples)*:
+2) Register the bundle's routes for `dev` environment *(optional, if you want to see the demo examples)*:
 
 ``` yaml
 # app/config/routing_dev.yml
 _bw_skeleton_bundle:
-    resource: "@BWSkeletonBundle/Resources/config/routing.yml"
-    prefix:   /_bw
+    resource: "@BWSkeletonBundle/Controller/"
+    type:     annotation
+    prefix:   /_bw/skeleton
 ```
 
 Congratulations!

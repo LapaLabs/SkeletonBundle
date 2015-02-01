@@ -1,0 +1,84 @@
+{%- block html -%}
+<!DOCTYPE html>
+<html lang="{% block lang -%}{{ lang|default('en') }}{%- endblock %}" {{ html_attr|default('')|raw }}>
+    <head {{ head_attr|default('')|raw }}>
+        {% block head -%}
+            {% block meta %}
+                <meta charset="{% block charset -%}{{ meta_charset|default('utf-8') }}{%- endblock %}">
+                <meta name="description" content="
+                    {%- block meta_description -%}
+                        {{ meta_description_prefix|default('') }}
+                        {%- block meta_description_wrap -%}
+                        {%- endblock -%}
+                        {{ meta_description_suffix|default('') }}
+                    {%- endblock -%}
+                "/>
+                <meta name="keywords" content="
+                    {%- block meta_keywords -%}
+                        {{ meta_keywords_prefix|default('') }}
+                        {%- block meta_keywords_wrap -%}
+                        {%- endblock -%}
+                        {{ meta_keywords_suffix|default('') }}
+                    {%- endblock -%}
+                ">
+            {% endblock meta %}
+
+            <title>
+                {%- block title -%}
+                    {{ title_prefix|default('') }}
+                    {%- block title_wrap -%}
+                    {%- endblock -%}
+                    {{ title_suffix|default('') }}
+                {%- endblock -%}
+            </title>
+
+            {% block favicon -%}
+                <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+            {% endblock %}
+
+            {% block css -%}
+                <!-- % Base::CSS % -->
+            {%- endblock %}
+
+            {% block js -%}
+                <!-- % Base::JS % -->
+            {%- endblock %}
+        {%- endblock head %}
+    </head>
+    <body {{ body_attr|default('')|raw }}>
+        {% block body -%}
+            {% block flash_messages -%}
+                % Base::FlashMessages %
+            {%- endblock %}
+
+            <div id="wrap-outer">
+                <div id="wrap">
+                    <div id="wrap-inner">
+                        {% block body_wrap -%}
+                            {% block header -%}
+                                % Base::Header %
+                            {%- endblock %}
+
+                            {% block content -%}
+                                % Base::Content %
+                            {%- endblock %}
+
+                            {% block footer -%}
+                                % Base::Footer %
+                            {%- endblock %}
+                        {%- endblock body_wrap %}
+                    </div>
+                </div>
+            </div>
+
+            {% block overflow -%}
+                % Base::Overflow %
+            {%- endblock %}
+
+            {% block body_js -%}
+                <!-- % Base::BodyJS % -->
+            {%- endblock %}
+        {%- endblock body %}
+    </body>
+</html>
+{%- endblock html -%}
