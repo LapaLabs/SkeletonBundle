@@ -13,7 +13,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class ExampleController extends Controller
 {
     /**
-     * @Route(path="/content", name="bw_skeleton_example_content")
+     * @Route(path="/content", name="lapalabs_skeleton_example_content")
      * @Template()
      */
     public function contentAction()

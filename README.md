@@ -10,7 +10,7 @@ Install
 
 Install bundle with `Composer` dependency manager first by running the command:
 
-`$ composer require "bocharsky-bw/skeleton-bundle:dev-master"`
+`$ composer require "lapalabs/skeleton-bundle:dev-master"`
 
 `Composer` will install the bundle to your project's `vendor` directory.
 

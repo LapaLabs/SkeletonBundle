@@ -1,8 +1,8 @@
 {
     "name": "lapalabs/skeleton-bundle",
     "description": "The HTML markup skeleton of base templates for Symfony Framework",
-    "keywords": ["bw", "skeleton", "base", "layout", "template", "markup", "bundle"],
-    "homepage": "https://github.com/bocharsky-bw/SkeletonBundle",
+    "keywords": ["lapalabs", "skeleton", "base", "layout", "template", "markup", "bundle"],
+    "homepage": "https://github.com/lapalabs/SkeletonBundle",
     "license": "MIT",
     "authors": [
         {
