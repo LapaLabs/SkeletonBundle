@@ -29,7 +29,7 @@ public function registerBundles()
 {
     $bundles = array(
         // other bundles...
-        new BW\SkeletonBundle\BWSkeletonBundle(),
+        new LapaLabs\SkeletonBundle\LapaLabsSkeletonBundle(),
     );
 }
 ```
@@ -38,10 +38,10 @@ public function registerBundles()
 
 ``` yaml
 # app/config/routing_dev.yml
-_bw_skeleton_bundle:
-    resource: "@BWSkeletonBundle/Controller/"
+_lapalabs_skeleton_bundle:
+    resource: "@LapaLabsSkeletonBundle/Controller/"
     type:     annotation
-    prefix:   /_bw/skeleton
+    prefix:   /_lapalabs/skeleton
 ```
 
 Congratulations!

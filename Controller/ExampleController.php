@@ -1,6 +1,6 @@
 <?php
 
-namespace BW\SkeletonBundle\Controller;
+namespace LapaLabs\SkeletonBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
