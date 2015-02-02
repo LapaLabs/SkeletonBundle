@@ -47,3 +47,9 @@ _lapalabs_skeleton_bundle:
 Congratulations!
 ----------------
 You're ready to rock your templates to extends skeleton templates!
+
+More documentation:
+* [Overriding Bundle Templates][1]
+
+
+[1]: http://symfony.com/doc/current/book/templating.html#overriding-bundle-templates
