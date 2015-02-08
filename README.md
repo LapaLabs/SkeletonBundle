@@ -50,6 +50,8 @@ You're ready to rock your templates to extends skeleton templates!
 
 More documentation:
 * [Overriding Bundle Templates][1]
+* [How to Use Bundle Inheritance to Override Parts of a Bundle][2]
 
 
 [1]: http://symfony.com/doc/current/book/templating.html#overriding-bundle-templates
+[2]: http://symfony.com/doc/current/cookbook/bundles/inheritance.html
