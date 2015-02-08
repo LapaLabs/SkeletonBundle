@@ -34,7 +34,7 @@ public function registerBundles()
 }
 ```
 
-2) Register the bundle's routes for `dev` environment *(optional, if you want to see the demo examples)*:
+2) Register the bundle's routes for `dev` environment *(optional, if you want to see demo examples)*:
 
 ``` yaml
 # app/config/routing_dev.yml
