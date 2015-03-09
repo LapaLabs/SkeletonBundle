@@ -1,12 +1,10 @@
-SkeletonBundle
-==============
+# SkeletonBundle
 
 The HTML markup skeleton of base templates for Symfony Framework
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/cb900935-8444-496a-8a97-8af04fad1aba/mini.png)](https://insight.sensiolabs.com/projects/cb900935-8444-496a-8a97-8af04fad1aba)
 
-Install
--------
+## Install
 
 Install bundle with `Composer` dependency manager first by running the command:
 
@@ -14,8 +12,7 @@ Install bundle with `Composer` dependency manager first by running the command:
 
 `Composer` will install the bundle to your project's `vendor` directory.
 
-Include
--------
+## Include
 
 Including the bundle to your `Symfony` project is as easy as to do a few simple steps.
 
@@ -44,8 +41,42 @@ _lapalabs_skeleton_bundle:
     prefix:   /_lapalabs/skeleton
 ```
 
-Congratulations!
-----------------
+## Usage
+
+The best practices is to create your own template, that extends skeleton one.
+For example, create your own `layout.html.twig` in `AppBundle`:
+
+``` jinja
+{# src/AppBundle/Resources/views/layout.html.twig #}
+
+{% extends 'LapaLabsSkeletonBundle:html5:layout.html.twig' %}
+
+{% block css %}
+    {{ parent() }} {# if you want to include content of parent block #}
+    <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap-theme.min.css') }}">
+{% endblock %}
+
+{% block js %}
+    <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+{% endblock %}
+```
+
+And then you can extends it in other templates:
+
+``` jinja
+{# src/AppBundle/Resources/views/Post/show.html.twig #}
+
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block content_wrap %}
+    <h1>{{ entity.heading }}</h1>
+    <p>{{ entity.description }}</p>
+{% endblock %}
+```
+
+## Congratulations!
+
 You're ready to rock your templates to extends skeleton templates!
 
 More documentation:
