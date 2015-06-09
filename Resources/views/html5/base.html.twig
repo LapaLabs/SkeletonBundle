@@ -51,25 +51,17 @@
                 % Base::FlashMessages %
             {%- endblock %}
 
-            <div id="wrap-outer">
-                <div id="wrap">
-                    <div id="wrap-inner">
-                        {% block body_wrap -%}
-                            {% block header -%}
-                                % Base::Header %
-                            {%- endblock %}
+            {% block header -%}
+                % Base::Header %
+            {%- endblock %}
 
-                            {% block content -%}
-                                % Base::Content %
-                            {%- endblock %}
+            {% block content -%}
+                % Base::Content %
+            {%- endblock %}
 
-                            {% block footer -%}
-                                % Base::Footer %
-                            {%- endblock %}
-                        {%- endblock body_wrap %}
-                    </div>
-                </div>
-            </div>
+            {% block footer -%}
+                % Base::Footer %
+            {%- endblock %}
 
             {% block overflow -%}
                 % Base::Overflow %
