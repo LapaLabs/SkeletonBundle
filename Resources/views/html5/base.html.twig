@@ -48,23 +48,23 @@
     <body {{ body_attr|default('')|raw }}>
         {% block body -%}
             {% block flash_messages -%}
-                % Base::FlashMessages %
+                <!-- % Base::FlashMessages % -->
             {%- endblock %}
 
             {% block header -%}
-                % Base::Header %
+                <!-- % Base::Header % -->
             {%- endblock %}
 
             {% block content -%}
-                % Base::Content %
+                <!-- % Base::Content % -->
             {%- endblock %}
 
             {% block footer -%}
-                % Base::Footer %
+                <!-- % Base::Footer % -->
             {%- endblock %}
 
             {% block overflow -%}
-                % Base::Overflow %
+                <!-- % Base::Overflow % -->
             {%- endblock %}
 
             {% block body_js -%}
